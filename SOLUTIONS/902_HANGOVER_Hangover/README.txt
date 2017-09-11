@@ -19,11 +19,11 @@ the table by 1/(n + 1).
 
 This is illustrated in the figure below.
 
-						 ================== 
-				================== 
-		  ================== 
-	  ================== 
-	================== 
+                         ================== 
+                ================== 
+          ================== 
+      ================== 
+    ================== 
 000000000000000000
 000000000000000000
 000000000000000000
@@ -72,32 +72,32 @@ Output:
 
 public class HelloWorld
 {
-	
-	private static int MAXINTVALUE = 10000000;
-	
-	private static float getDivided( int denom )
-	{
-		return (float)1.0/denom;
-	}
-	
-	
-	private static float getTotal( int cards )
-	{
-		float total = 0;
-		for(int i=2; i<cards; i++) {
-			total += getDivided( i );
-			System.out.println("Total = " + total );
-		}
-		
-		return total;
-	}
-	
+    
+    private static int MAXINTVALUE = 10000000;
+    
+    private static float getDivided( int denom )
+    {
+        return (float)1.0/denom;
+    }
+    
+    
+    private static float getTotal( int cards )
+    {
+        float total = 0;
+        for(int i=2; i<cards; i++) {
+            total += getDivided( i );
+            System.out.println("Total = " + total );
+        }
+        
+        return total;
+    }
+    
 
-	public static void main(String []args)
-	{
-		int cards = 10;
-		
-		System.out.println("Final total =  " + getTotal( cards ));		  
-	
-	}
+    public static void main(String []args)
+    {
+        int cards = 10;
+        
+        System.out.println("Final total =  " + getTotal( cards ));        
+    
+    }
 }

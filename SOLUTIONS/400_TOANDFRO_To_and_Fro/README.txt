@@ -21,7 +21,7 @@ although he could have used any letter. Mo then sends the message to Larry by wr
 the letters in each row, alternating left-to-right and right-to-left. 
 
 So, the above would be encrypted as;
-	toioynnkpheleaigshareconhtomesnlewx
+    toioynnkpheleaigshareconhtomesnlewx
 
 Your job is to recover for Larry the original message (along with any extra padding letters) 
 from the encrypted one.

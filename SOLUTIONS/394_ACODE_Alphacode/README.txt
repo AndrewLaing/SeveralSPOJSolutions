@@ -4,18 +4,18 @@ Alice and Bob need to send secret messages to each other and are discussing ways
 their messages:
 
   Alice: “Let’s just use a very simple code: We’ll assign ‘A’ the code word 1, ‘B’ will be 2, 
-		 and so on down to ‘Z’ being assigned 26.”
+         and so on down to ‘Z’ being assigned 26.”
 
   Bob: “That’s a stupid code, Alice. Suppose I send you the word ‘BEAN’ encoded as 25114. 
-		You could decode that in many different ways!”
+        You could decode that in many different ways!”
 
   Alice: “Sure you could, but what words would you get? Other than ‘BEAN’, you’d get ‘BEAAD’, 
-		 ‘YAAD’, ‘YAN’, ‘YKD’ and ‘BEKD’. I think you would be able to figure out the correct 
-		  decoding. And why would you send me the word ‘BEAN’ anyway?”
+         ‘YAAD’, ‘YAN’, ‘YKD’ and ‘BEKD’. I think you would be able to figure out the correct 
+          decoding. And why would you send me the word ‘BEAN’ anyway?”
  
   Bob: “OK, maybe that’s a bad example, but I bet you that if you got a string of length 5000 
-	   there would be tons of different decodings and with that many you would find at least 
-	   two different ones that would make sense.”
+       there would be tons of different decodings and with that many you would find at least 
+       two different ones that would make sense.”
 
   Alice: “How many different decodings?”
 
@@ -58,7 +58,7 @@ Output:
 ==============================================================================================
 
 ﻿===============================================================
-					 Algorithms for ACODE
+                     Algorithms for ACODE
 ===============================================================
 
 1: STORE THE STRING GLOBALLY
@@ -87,9 +87,9 @@ overhead for solving a single problem. However in the SPOJ problems
 there are multiple test cases.
 
 see also: http://prismoskills.appspot.com/lessons/Dynamic_Programming/Chapter_01_-_Introduction.jsp
-		  https://www.javacodegeeks.com/2014/02/dynamic-programming-introduction.html
-		  https://www.hackerearth.com/practice/notes/dynamic-programming-for-beginners-part-1/
-		  https://www.youtube.com/watch?v=OQ5jsbhAv_M
+          https://www.javacodegeeks.com/2014/02/dynamic-programming-introduction.html
+          https://www.hackerearth.com/practice/notes/dynamic-programming-for-beginners-part-1/
+          https://www.youtube.com/watch?v=OQ5jsbhAv_M
 
 ---------------------------------------------------------------
 Source: Python. 
@@ -97,13 +97,13 @@ Source: Python.
 cache = {}
 
 def fibonacci(n):
-	cache[0] = 0
-	cache[1] = 1
+    cache[0] = 0
+    cache[1] = 1
 
-	for i in range(2, n + 1):
-		cache[i] = cache[i - 1] +  cache[i - 2]
+    for i in range(2, n + 1):
+        cache[i] = cache[i - 1] +  cache[i - 2]
 
-	return cache[n]
+    return cache[n]
 
 ---------------------------------------------------------------
 
@@ -117,7 +117,7 @@ Check all the strings and see if u get the correct result if u do submit the cod
 3 
 987654321 
 2 
-1234567890		  # invalid string no chars begin with 0
+1234567890        # invalid string no chars begin with 0
 0 
 543212345 
 5 
@@ -131,9 +131,9 @@ Check all the strings and see if u get the correct result if u do submit the cod
 2 
 101 
 1 
-100				  # invalid string no chars begin with 0
+100               # invalid string no chars begin with 0
 0 
-50				  # invalid string no chars begin with 0
+50                # invalid string no chars begin with 0
 0 
 10
 1
@@ -143,7 +143,7 @@ Check all the strings and see if u get the correct result if u do submit the cod
 1 
 865723149 
 4 
-1006598736254	  # invalid string no chars begin with 0
+1006598736254     # invalid string no chars begin with 0
 0 
 96587412359875 
 3 

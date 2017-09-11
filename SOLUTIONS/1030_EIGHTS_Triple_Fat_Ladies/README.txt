@@ -39,23 +39,23 @@ So this is a simple n = 192 + 250*(k-1). (for k >= 0)
 python proof
 ============
 def endsInEights(x):
-	if x<1000 and x!=888:
-		return False
-	y = (x//1000)*1000
-	if x-y == 888
-		return True
-	else
-		return False
+    if x<1000 and x!=888:
+        return False
+    y = (x//1000)*1000
+    if x-y == 888
+        return True
+    else
+        return False
 
 
 def getCube(x):
-	return x*x*x
+    return x*x*x
 
 
 for i in range(9,5000):
-	if endsInEights( getCube(i) ):
-		print(i)
-	
+    if endsInEights( getCube(i) ):
+        print(i)
+    
 192
 442
 692

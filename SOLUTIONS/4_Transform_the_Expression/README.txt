@@ -1,4 +1,4 @@
-4 Transform the Expression	
+4 Transform the Expression  
 
 Transform the algebraic expression with brackets into RPN form (Reverse Polish Notation). 
 Two-argument operators: +, -, *, /, ^ (priority from the lowest to the highest), 

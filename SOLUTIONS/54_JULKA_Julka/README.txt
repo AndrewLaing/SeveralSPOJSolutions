@@ -6,7 +6,7 @@ Klaudia and Natalia have 10 apples together, but Klaudia has two apples more tha
 How many apples does each of the girls have?
 
 Julka said without thinking: 
-	Klaudia has 6 apples and Natalia 4 apples. 
+    Klaudia has 6 apples and Natalia 4 apples. 
 
 The teacher tried to check if Julka's answer wasn't accidental and repeated 
 the riddle every time increasing the numbers. Every time Julka answered correctly. 
@@ -67,7 +67,7 @@ NumberOfApples/2 = mean
 Klaudia = mean + ( difference/2 )
 Natalia = mean - ( difference/2 )
 
-Note: must be able to calculate up to 1 100 zeros!	Use BigInteger ?
+Note: must be able to calculate up to 1 100 zeros!  Use BigInteger ?
 
 What about 7 2 - not possible!
 BUT - 7 1 is possible

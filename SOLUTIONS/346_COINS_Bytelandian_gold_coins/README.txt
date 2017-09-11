@@ -5,7 +5,7 @@ In Byteland they have a very strange monetary system.
 Each Bytelandian gold coin has an integer number written on it. 
 
 A coin n can be exchanged in a bank into three coins: 
-	n/2, n/3 and n/4. 
+    n/2, n/3 and n/4. 
 
 But these numbers are all rounded down (the banks have to make a profit).
 
@@ -52,28 +52,28 @@ using namespace std;
 
 
 int calc( int n ) {
-	int res = 0;
-	
-	if (n > 2)
-		res += n/2;
-	else {
-		res += n;
-		return res;
-	}
-	   
-	if (n > 3)
-		res += n/3;
-	else {
-		res += n; 
-		return res;
-	}
+    int res = 0;
+    
+    if (n > 2)
+        res += n/2;
+    else {
+        res += n;
+        return res;
+    }
+       
+    if (n > 3)
+        res += n/3;
+    else {
+        res += n; 
+        return res;
+    }
 
-	if (n > 4)
-		res += n/4;
-	else
-		res += n;
-	
-	return res;
+    if (n > 4)
+        res += n/4;
+    else
+        res += n;
+    
+    return res;
 }
 
 
@@ -81,12 +81,12 @@ int calc( int n ) {
 int main()
 {
    cout << "result = "
-		<< calc(12)
-		<< endl; 
+        << calc(12)
+        << endl; 
    
    cout << "result = "
-		<< calc(2)
-		<< endl; 
+        << calc(2)
+        << endl; 
    
    
    return 0;
