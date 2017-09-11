@@ -4,16 +4,16 @@ Starting from point (0,0) on a plane, we have written all non-negative integers
 0, 1, 2,... as shown in the figure. For example, 1, 2, and 3 has been written
 at points (1,1), (2,0), and (3, 1) respectively and this pattern has continued.
 
-y |                     .
-6 |                   12                  
-5 |                9     11
-4 |             8     10
-3 |          5     7
-2 |       4     6
-1 |    1     3
-0 | 0     2
+y |						.
+6 |					  12				  
+5 |				   9	 11
+4 |				8	  10
+3 |			 5	   7
+2 |		  4		6
+1 |	   1	 3
+0 | 0	  2
 --------------------------
-  | 0  1  2  3  4  5  6  7 x
+  | 0  1  2	 3	4  5  6	 7 x
 
 You are to write a program that reads the coordinates of a point (x, y), 
 and writes the number (if any) that has been written at that point. 
@@ -72,26 +72,26 @@ int getNumberStep(int x, int y)
 
 {
 
-    if(y<0 || x < 0)
+	if(y<0 || x < 0)
 
-        return -1;
+		return -1;
 
-    if( y!=x && y+2!=x )
+	if( y!=x && y+2!=x )
 
-        return -1;
-    
+		return -1;
+	
 
-    if(x<2)
+	if(x<2)
 
-        return x;
+		return x;
 
-    else if(x == 2 || x%2==0)
+	else if(x == 2 || x%2==0)
 
-        return x+y;
+		return x+y;
 
-    else
+	else
 
-        return x+y-1;
+		return x+y-1;
 
 }
 
@@ -103,46 +103,46 @@ int main()
 
 {
 
-    int test, x, y;
+	int test, x, y;
 
-    
+	
 x=4, y=2;
 
-    test = getNumberStep(x, y);
-    if( test != -1 )
+	test = getNumberStep(x, y);
+	if( test != -1 )
 
-        cout << x << "," << y << " = " << test << endl;
+		cout << x << "," << y << " = " << test << endl;
 
-    else
+	else
 
-        cout << x << "," << y << " = No number." << endl;
+		cout << x << "," << y << " = No number." << endl;
 
 
-    
+	
 x=6, y=6;
 
-    test = getNumberStep(x, y);
-    if( test != -1 )
+	test = getNumberStep(x, y);
+	if( test != -1 )
 
-        cout << x << "," << y << " = " << test << endl;
+		cout << x << "," << y << " = " << test << endl;
 
-    else
+	else
 
-        cout << x << "," << y << " = No number." << endl;
+		cout << x << "," << y << " = No number." << endl;
 
-    
+	
 x=3, y=4;
 
-    test = getNumberStep(x, y);
-    if( test != -1 )
+	test = getNumberStep(x, y);
+	if( test != -1 )
 
-        cout << x << "," << y << " = " << test << endl;
+		cout << x << "," << y << " = " << test << endl;
 
-    else
+	else
 
-        cout << x << "," << y << " = No number." << endl;
+		cout << x << "," << y << " = No number." << endl;
 
-    return 0;
+	return 0;
 
 }
 

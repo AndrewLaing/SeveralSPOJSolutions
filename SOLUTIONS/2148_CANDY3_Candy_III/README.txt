@@ -27,8 +27,8 @@ The first line of the input file contains an integer T specifying the number of 
 Each test case is preceded by a blank line.
 
 Each test case looks as follows: 
-    The first line contains N : the number of children. 
-    Each of the next N lines contains the number of candies one child brought.
+	The first line contains N : the number of children. 
+	Each of the next N lines contains the number of candies one child brought.
 
 Output specification
 
