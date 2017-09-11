@@ -53,97 +53,54 @@ SOLUTION in C++
 
 #include <iostream>
 
-
 using namespace std;
 
-
-
 /* /// PROTOTYPES /// */
-
-
 int getNumberStep( int, int );
 
-
-
 /* /// FUNCTIONS /// */
-
-
 int getNumberStep(int x, int y)
-
 {
-
     if(y<0 || x < 0)
-
         return -1;
-
     if( y!=x && y+2!=x )
-
         return -1;
     
-
     if(x<2)
-
         return x;
-
     else if(x == 2 || x%2==0)
-
         return x+y;
-
     else
-
         return x+y-1;
-
 }
-
-
-
 
 
 int main()
-
 {
-
     int test, x, y;
-
-    
-x=4, y=2;
+    x=4, y=2;
 
     test = getNumberStep(x, y);
     if( test != -1 )
-
         cout << x << "," << y << " = " << test << endl;
-
     else
-
         cout << x << "," << y << " = No number." << endl;
-
-
     
-x=6, y=6;
+    x=6, y=6;
 
     test = getNumberStep(x, y);
     if( test != -1 )
-
         cout << x << "," << y << " = " << test << endl;
-
     else
-
         cout << x << "," << y << " = No number." << endl;
-
-    
-x=3, y=4;
+        
+    x=3, y=4;
 
     test = getNumberStep(x, y);
     if( test != -1 )
-
         cout << x << "," << y << " = " << test << endl;
-
     else
-
         cout << x << "," << y << " = No number." << endl;
 
     return 0;
-
 }
-
-
