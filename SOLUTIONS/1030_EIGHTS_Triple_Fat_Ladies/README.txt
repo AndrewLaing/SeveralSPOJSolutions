@@ -33,7 +33,7 @@ Output:
 
 
 I found results that shows that the first starts at 192 and repeats every 250 afterwards.
-So this is a simple n = 192 + 250*(k-1). (for k >= 0)
+So this is a simple n = 192 + 250*(k-1). (for k >= 1)
 
 ============
 python proof
