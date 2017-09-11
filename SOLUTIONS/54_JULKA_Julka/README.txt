@@ -56,19 +56,3 @@ Output:
 6
 4
 [and 9 test cases more]
-
-=========================================================================================
-=========================================================================================
-=========================================================================================
-
-Is there a more efficient way of calculating than;
-
-NumberOfApples/2 = mean
-Klaudia = mean + ( difference/2 )
-Natalia = mean - ( difference/2 )
-
-Note: must be able to calculate up to 1 100 zeros!  Use BigInteger ?
-
-What about 7 2 - not possible!
-BUT - 7 1 is possible
-For odd diff must be odd.
