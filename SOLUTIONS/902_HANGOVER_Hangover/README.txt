@@ -1,0 +1,103 @@
+902 - HANGOVER - Hangover
+
+How far can you make a stack of cards overhang a table? 
+If you have one card, you can create a maximum overhang 
+of half a card length. (We're assuming that the cards 
+must be perpendicular to the table.)
+ 
+With two cards you can make the top card overhang the 
+bottom one by half a card length, and the bottom one 
+overhang the table by a third of a card length, for a 
+total maximum overhang of 1/2 + 1/3 = 5/6 card lengths. 
+
+In general you can make n cards overhang by 
+   1/2 + 1/3 + 1/4 + ... + 1/(n + 1) card lengths, 
+where the top card overhangs the second by 1/2, the 
+second overhangs the third by 1/3, the third overhangs 
+the fourth by 1/4, etc., and the bottom card overhangs 
+the table by 1/(n + 1). 
+
+This is illustrated in the figure below.
+
+                         ================== 
+                ================== 
+          ================== 
+      ================== 
+    ================== 
+000000000000000000
+000000000000000000
+000000000000000000
+000000000000000000
+000000000000000000
+
+
+
+Input
+
+The input consists of one or more test cases, followed by a line containing the number 0.00 
+that signals the end of the input. 
+
+Each test case is a single line containing a positive floating-point number c whose value 
+is at least 0.01 and at most 5.20; c will contain exactly three digits.
+
+Output
+
+For each test case, output the MINIMUM number of cards necessary to achieve an overhang 
+of at least c card lengths. Use the exact output format shown in the examples.
+
+----------------------------------------------------------------------------------------
+Input:
+
+1.00
+3.71
+0.04
+5.19
+0.00
+
+----------------------------------------------------------------------------------------
+Output:
+
+3 card(s)
+61 card(s)
+1 card(s)
+273 card(s)
+
+
+=========================================================================================
+=========================================================================================
+=========================================================================================
+
+1 <= t <= 100
+0 <= c <= 9.99 
+
+public class HelloWorld
+{
+    
+    private static int MAXINTVALUE = 10000000;
+    
+    private static float getDivided( int denom )
+    {
+        return (float)1.0/denom;
+    }
+    
+    
+    private static float getTotal( int cards )
+    {
+        float total = 0;
+        for(int i=2; i<cards; i++) {
+            total += getDivided( i );
+            System.out.println("Total = " + total );
+        }
+        
+        return total;
+    }
+    
+
+    public static void main(String []args)
+    {
+        int cards = 10;
+        
+        System.out.println("Final total =  " + getTotal( cards ));        
+    
+    }
+}

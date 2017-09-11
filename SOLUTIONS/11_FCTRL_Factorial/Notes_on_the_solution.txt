@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------
+Notes on the solution.
+
+An algorithm exists for solving this problem which does not
+involve calculating factorials. 
+---------------------------------------------------------------------------------
+Algorithm:
+
+For n!
+
+Let total=0, x=5
+while x<=n
+  total += n/x
+  x *= 5
+
+---------------------------------------------------------------------------------
+Example:
+
+The number of multiples of 5 <= 1000 is 1000/5 = 200. 
+The number of multiples of 25 <= 1000 is 1000/25 = 40. 
+The number of multiples of 125 <= to 1000 is 1000/125 = 8. 
+The only multiples of 625 <= 1000 is 625/625 = 1
+
+Thus, 1000! has a total of 200 + 40 + 8 + 1 = 249 trailing zeros.
