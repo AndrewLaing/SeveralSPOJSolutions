@@ -117,12 +117,12 @@ public class Solution1
      * @param testCase The integer number of test cases to perform.
      * @return True if the length is within the allowed limits, otherwise false.
      */
-    public static boolean isValidfTestCase( BigInteger testCase )
+    public static boolean isValidTestCase( BigInteger testCase )
     {
         String test = testCase.toString();
         boolean res = ( 1 <= test.length()) && ( test.length() <= 1000000 );
         if(!res)
-            System.out.println("Error - Number of number of digits must be in the range 1-1000000");
+            System.out.println("Error - Number of digits must be in the range 1-1000000");
 
         return res;
     }
@@ -162,7 +162,7 @@ public class Solution1
         System.out.print("Enter test case value > ");
         testCase = getPositiveBigInteger();
 
-        while( !isValidfTestCase(testCase) )
+        while( !isValidTestCase(testCase) )
         {
             System.out.print("Enter test case value > ");
             testCase = getPositiveBigInteger();
@@ -201,7 +201,7 @@ public class Solution1
     {
         BigInteger one = new BigInteger("1");
         boolean found = false;
-        while(isValidfTestCase(n)) {
+        while(isValidTestCase(n)) {
             n = n.add(one);
             if(isPalindrome(n)) {
                 found = true;
