@@ -1,0 +1,24 @@
+﻿1	Life, the Universe, and Everything  
+42	Adding Reversed Numbers
+2	Prime Generator
+11	Factorial  
+24	Small factorials  
+4	Transform the Expression
+1112	Number Steps
+3410	Feynman
+7974	What’s Next  
+2123	Candy I  
+1025	Fashion Shows  
+400	To and Fro
+4300	Rectangles  
+3442	The last digit  
+﻿346	Bytelandian gold coins
+54	Julka
+2148	Candy III
+1030	Triple Fat Ladies
+394     Alphacode
+5       The next Palindrome
+902     Hangover
+9948    Will it ever stop
+2157    Anti-blot system
+
