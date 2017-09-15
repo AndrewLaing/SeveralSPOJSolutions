@@ -2,8 +2,8 @@
  * Filename:
  * Author:      Andrew Laing
  * Email:       parisianconnections@gmail.com
- * Date:        14/09/2017.
- * Description:
+ * Date:        15/09/2017.
+ * Description: SPOJ Exercise - see README.md
  */
 
 import java.util.Scanner;
